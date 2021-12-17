@@ -2,6 +2,8 @@
 #include "wifiHttpSetup.h"
 #include "matrix.h"
 #include <ArduinoJson.h>
+#include <WiFiClient.h>
+WiFiClient wifiClient;
 
 String dataHost = "";
 long timeHost =0;
@@ -19,7 +21,7 @@ void loop() {
   if(millis()-timeHost>2500){
   HttpServer.handleClient();
   HTTPClient http;
-  http.begin(host);
+  http.begin(wifiClient,host);
   int httpCode = http.GET();
   dataHost=httpCode;
   if (httpCode == 200)
