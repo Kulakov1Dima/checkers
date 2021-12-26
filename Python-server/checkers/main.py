@@ -11,7 +11,7 @@ def respond():
 
     if command:
         response_text = 'Ненавижу Python!'
-    else:
+    else: 
         response_text = 'Привет'
 
     response = {
