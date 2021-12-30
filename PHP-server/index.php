@@ -47,5 +47,5 @@ echo $response;
    
 }
  catch(\Exception $e){
-    echo '["Error occured"]';
+    echo $e;
 } 
