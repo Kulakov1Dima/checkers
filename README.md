@@ -22,3 +22,10 @@
 ![image](https://user-images.githubusercontent.com/84613812/147714874-397d44d5-c577-49a0-8447-8e28e4d42e0a.png)
 
 Голосовое управление реализовано с помощью навыка алисы. В качестве сервера выступает программа php на хостинге www.000webhost.com. Исходник вы сможете найти в папке PHP-server (https://github.com/interpreter-It/checkers/tree/main/PHP-server).
+
+Навык является приватным до момента окончания работы над веб сервером.
+
+![image](https://user-images.githubusercontent.com/84613812/147715240-a6480e34-e203-4a97-942c-02228e3c3a8b.png)
+
+Также были попытки реализации сервера языке Python ().
+
