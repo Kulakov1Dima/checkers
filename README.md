@@ -30,4 +30,8 @@
 Также были попытки реализации сервера языке Python (Исходник: https://github.com/interpreter-It/checkers/tree/main/Python-server/checkers).
 Хостинг: https://web.deta.sh/
 
+Реализация была прекращена по причине долгого ответа вебсервера:
+
+![image](https://user-images.githubusercontent.com/84613812/147715488-0104d543-36b1-49f7-b069-28443d585710.png)
+
 
