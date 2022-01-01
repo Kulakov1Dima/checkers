@@ -9,17 +9,16 @@ header('Content-Type: application/json');
 try{
     $arduinostr =file_get_contents("data.txt");
     $data = json_decode(file_get_contents('php://input'), true); 
-    
+
     if (isset($data['request'], $data['request']['command'], $data['session'], $data['session']['session_id'], $data['session']['message_id'], $data['session']['user_id'])) {
             
-            if($data['session']['message_id']!=0){
+        if($data['session']['message_id']!=0){
                 
                 $arduinostr = ArduinoPhonemes($data['request']['command']);
         	    file_put_contents('data.txt', $arduinostr);
         	    
         	    $response = randomResponse($data);
         	    if(configuration($arduinostr))$response=generationFixRequest(configuration($arduinostr));
-            
             }
             else{
                 $response = json_encode([
@@ -44,7 +43,6 @@ try{
             }
     }
 echo $response;
-   
 }
  catch(\Exception $e){
     echo $e;
